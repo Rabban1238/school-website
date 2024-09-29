@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - We Care School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://lh4.googleusercontent.com/y1958MTg3LC3FVCsvH52iDP8MS5G_HBFvESaOsCRFv4-d4-oHdVWp6uAQFq9JHX7nu9eKD2yVz34GUG0fES0MmM=w16383" alt="School Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery-images">
+        <h2>Explore Our School</h2>
+        <div class="image-gallery">
+            <div class="gallery-slider">
+                <!-- Image 1 -->
+                <div class="slide active">
+                    <img src="https://lh4.googleusercontent.com/zb9prtCbzJdZ4HTtUGO_ZwsTvWKrWJUjBeCGuTqFa9VW97NHVRv76oaRkJeacLQ3tb8gypNsHRV_cloQgUsC2uk=w16383" alt="Classroom Image 1">
+                </div>
+                <!-- Image 2 -->
+                <div class="slide">
+                    <img src="https://lh5.googleusercontent.com/6xbsgbQdnrPIgDeN_jl33WotlMi-twbQUtD5wW7oKwEPzyV4h-SZp6gbyJ0yPebjwaPDipBvy4AQfBuf3rltHbc=w16383" alt="Play Area Image 2">
+                </div>
+                <!-- Image 3 -->
+                <div class="slide">
+                    <img src="https://lh3.googleusercontent.com/kR31K6NVEh49clP82EmyhFMBWXW6Nbjvnlo46Sxgscdpor4irnikxYHzyE1x3gZhGvbnYdUV7zxJLl8gWUL9X4o=w16383" alt="Sports Day Image 3">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 We Care School. All Rights Reserved.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

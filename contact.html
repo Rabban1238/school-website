@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - We Care School</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for logo and navigation */
+        .logo img {
+            max-width: 150px; /* Adjusted logo size */
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .nav-links li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        /* Styles for contact section */
+        #contact {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        /* Adjusted image size */
+        .contact-image {
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Form styling */
+        .contact-form {
+            margin-top: 20px;
+            max-width: 600px; /* Max width for form */
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            font-weight: bold; /* Making labels bold */
+            margin-top: 10px; /* Adding space above labels */
+            display: block; /* Making labels block elements */
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 400px; /* Adjusted width for input fields */
+            padding: 10px;
+            margin: 10px 0 20px; /* Adjusted margin for spacing */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://lh6.googleusercontent.com/q068kwulla32Ujf61TY_Chxu5XIUbESJ7Wu1EcPHZh8KzGATw98N37LacuXGfleaeCN6rIa-o7dtnQzHZgrElS8=w16383" alt="School Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Please feel free to reach out using the information below or submit the contact form.</p>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>We Care English School</strong></p>
+            <p>Location: Abhiramapuram Main Road, Anjugam Nagar, Nanganallur, Chennai – 600061</p>
+            <p>Phone: 9962515566</p>
+            <p>Email: wecareenglishschool@gmail.com</p>
+        </div>
+
+        <!-- Image -->
+        <img class="contact-image" src="https://th.bing.com/th/id/OIP.TKFBOunZqIw5xFl_0GhsdgHaD9?rs=1&pid=ImgDetMain" alt="School Image">
+
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 We Care School. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
